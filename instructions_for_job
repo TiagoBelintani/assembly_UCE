@@ -1,0 +1,25 @@
+Explanation
+
+Time Limit (#SBATCH -t 40:00:00): Sets the maximum execution time for the job to 40 hours.
+
+CPU Cores (#SBATCH -c 20): Allocates 20 CPU cores for the task.
+
+Memory (#SBATCH --mem 200G): Allocates 200 GB of memory for the job.
+
+Email Notifications:
+#SBATCH --mail-user=tiagobellintani@gmail.com: Your email address where notifications will be sent.
+#SBATCH --mail-type=ALL: Sends emails at the start, end, and in case of job failures.
+
+Loading Miniconda (module load miniconda/3-2023-09): Loads the Miniconda module. Replace with the correct repository address if needed.
+
+Activating Conda Environment (source activate phyluce-1.7.3): Activates the Conda environment with Phyluce version 1.7.3. Replace with your specific Phyluce environment if different.
+
+Defining Variables:
+export INPUT="assembly.conf trimmed_data": Sets the input directories and files.
+export OUTPUT="spades-assemblies": Sets the output directory for the results.
+
+Running Phyluce Command: Executes the Phyluce command to perform assembly using the SPAdes assembler, specifying configuration files, output directory, number of cores, memory, and log path.
+
+This script is used to submit a job to a SLURM-managed cluster for processing genomic data with Phyluce. Adjust the paths and environment names as needed for your specific setup.
+
+
