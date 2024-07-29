@@ -1,0 +1,30 @@
+For more details, please refer to the Phyluce documentation: Phyluce Assembly Tutorial https://phyluce.readthedocs.io/en/latest/tutorials/tutorial-1.html#assemble-the-data
+
+Step-by-Step Instructions
+1. Create a Directory for Logs
+
+To store log files, first create a directory named log:
+
+bash
+Copy code
+mkdir log
+
+2. Prepare the assembly.conf Configuration File
+
+The assembly.conf file should list all the species and their corresponding directories. Here’s an example structure for this file:
+
+ini
+Copy code
+[samples]
+Triatoma_picturata:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_picturata/
+Triatoma_phyllosoma:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_phyllosoma/
+Meccus_pallidipennis:/home/tiagobelintani/uce_treinamento/trimmed_data/Meccus_pallidipennis/
+Triatoma_mexicana:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_mexicana/
+Triatoma_mazzottii:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_mazzottii/
+Triatoma_longipennis:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_longipennis/
+Triatoma_indictiva:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_indictiva/
+Triatoma_gerstaeckeri:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_gerstaeckeri/
+Triatoma_dimidiata:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_dimidiata/
+Triatoma_brailovskyi:/home/tiagobelintani/uce_treinamento/trimmed_data/Triatoma_brailovskyi/
+
+Ensure that the paths provided are correct and point to the directories containing your cleaned UCE raw reads.
