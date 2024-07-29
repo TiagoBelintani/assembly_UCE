@@ -41,5 +41,5 @@ phyluce_assembly_assemblo_spades --version
 
 
 Fourth step: create jobs and execute.
-Access and edit job: assembly_job.sh 
+Access and edit job: assembly_job.sh https://github.com/TiagoBelintani/assembly_UCE/blob/main/assembly_job.sh 
 
